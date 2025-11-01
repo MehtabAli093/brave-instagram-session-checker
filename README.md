@@ -96,3 +96,13 @@ Finally, it displays a summary showing:
 ---
 
 ### 🧩 Example Output (Console)
+🚀 INSTAGRAM SESSION EXTRACTOR - ULTRA FAST
+✅ Found 5 profiles
+⚡ PROCESSING 5 PROFILES...
+
+✅ Profile 1: LOGGED IN
+🔴 Profile 2: No session
+...
+📊 FINAL RESULTS
+✅ Profiles with sessions: 2/5
+📧 Email sent successfully!
