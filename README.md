@@ -51,3 +51,48 @@ Use responsibly and only on systems and accounts you own.
   Made with ❤️ by <a href="https://github.com/MehtabAli093">Mehtab Ali</a> • 
   📧 <a href="mailto:mehtabahmed093@gmail.com">prodark093@gmail.com</a>
 </p>
+
+---
+
+### 🧠 How It Works
+
+The script automates the process of checking whether Brave browser profiles contain active Instagram sessions.
+
+#### 1. 🧹 Cleanup
+It starts by forcefully killing all existing Brave and ChromeDriver processes to avoid conflicts and ensure a clean run.
+
+#### 2. 🔍 Profile Detection
+The script scans the Brave user data directory (`AppData\Local\BraveSoftware\Brave-Browser\User Data`) and lists all valid profiles such as **Default**, **Profile 1**, **Profile 2**, etc.
+
+#### 3. ⚙️ WebDriver Setup
+For each profile, it launches Brave in **headless mode** using Selenium with aggressive performance optimizations — JavaScript, plugins, and images are disabled for faster execution.
+
+#### 4. 🌐 Instagram Session Check
+It navigates to `https://www.instagram.com/` and performs a quick login status check by:
+- Looking for session cookies like `sessionid`
+- Checking the current URL (login page or not)
+- Inspecting the DOM for navigation elements
+
+#### 5. 📦 Data Extraction
+If a valid session is found, the script extracts:
+- Cookie names and values  
+- Profile name  
+- Timestamp  
+- Active session count  
+
+It saves this data as a JSON file inside the `instagram_profiles_data` directory.
+
+#### 6. 📧 Email Reporting
+Once all profiles are processed:
+- It compiles all data into a single JSON report.  
+- Sends the report to the configured Gmail address using **SMTP with TLS**.  
+
+#### 7. 📊 Summary Output
+Finally, it displays a summary showing:
+- Number of profiles scanned  
+- Number of active sessions found  
+- Total execution time  
+
+---
+
+### 🧩 Example Output (Console)
