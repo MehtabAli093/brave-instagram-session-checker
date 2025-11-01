@@ -49,5 +49,5 @@ Use responsibly and only on systems and accounts you own.
 
 <p align="center">
   Made with ❤️ by <a href="https://github.com/MehtabAli093">Mehtab Ali</a> • 
-  📧 <a href="mailto:prodark093@gmail.com">prodark093@gmail.com</a>
+  📧 <a href="mailto:mehtabahmed093@gmail.com">prodark093@gmail.com</a>
 </p>
